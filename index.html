@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pakar Diagnosa Penyakit Hewan Peliharaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistem Pakar Diagnosa Penyakit Hewan Peliharaan</h1>
+        <form id="diagnosisForm">
+            <h2>Pilih Hewan Peliharaan:</h2>
+            <select id="hewan" required>
+                <option value="">--Pilih Hewan--</option>
+                <option value="kucing">Kucing</option>
+                <option value="anjing">Anjing</option>
+            </select>
+
+            <h2>Pilih Gejala:</h2>
+            <div>
+                <input type="checkbox" id="gejala1" value="demam">
+                <label for="gejala1">Demam</label>
+            </div>
+            <div>
+                <input type="checkbox" id="gejala2" value="batuk">
+                <label for="gejala2">Batuk</label>
+            </div>
+            <div>
+                <input type="checkbox" id="gejala3" value="lesu">
+                <label for="gejala3">Lesu</label>
+            </div>
+            <div>
+                <input type="checkbox" id="gejala4" value="muntah">
+                <label for="gejala4">Muntah</label>
+            </div>
+            <button type="submit">Diagnosa</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
